@@ -1,6 +1,6 @@
 ***Web Learning Repository***
 
-Welcome to my web learning repository! This repository is dedicated to documenting my journey as I learn web development. Here, you'll find a collection of resources, projects, and notes as I progress in my learning journey.
+Welcome to my web learning repository! This repository is dedicated to documenting my journey as I learn web development. Here, you'll find a collection of resources, projects, and notes as I progress in my journey.
 
 **About**
 
