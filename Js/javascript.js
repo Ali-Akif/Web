@@ -63,6 +63,35 @@ text.replaceAll("bon", "Jour") // ! explorer
 text.split(",") // return array
 text.split("") // array of single characters
 
+"01" == 1 // True, "01" become number 1
+
+0 == false // true
+0 === false // false 
+
+null > 0 // false, converted to 0
+null >= 0 // true
+but null == 0 // false, doesnt convert to a number here :|
+
+undefined == null 
+
+undefined > < ==, only equal : Nan Nan null
+
+" so avoid using >= > < <= with a variable which may be null/undefined "
 
 
+if (hour < 18) {
+    greeting = "Good day";
+} else if (hour = 20) {
+    greeting = "Its 8 man"
+} else {
+    greeting = "what the fuck is time"
+}
 
+|| // OR, meant for bool, if any arg are true, it return true, otherwise it return false (can convert value to bool)
+// Return the first truthy value or the last falsy if no true
+false || alert("printed");
+
+&& // AND
+
+! // NOT
+?? //Nullish coalescing
