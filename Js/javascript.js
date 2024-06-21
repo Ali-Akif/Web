@@ -2,11 +2,6 @@ console.log();
 let
 const
 
-
-const name = "Ali";
-const greeting = `Hello, ${name}`;  // Outputs: Hello, Ali
-
-
 typeof
 .toFixed()
 
