@@ -91,7 +91,23 @@ if (hour < 18) {
 // Return the first truthy value or the last falsy if no true
 false || alert("printed");
 
-&& // AND
+&& // AND, return true only if every value is true, otherwise return the last, return the first falsy value or the last if none is
 
-! // NOT
+Precedence && > ||
+
+! // Not, give the inverse as a bool, !! give just the bool, or use 
+Boolean()
+
 ?? //Nullish coalescing
+
+
+switch (expression) {
+
+    case choice 1;
+        // code
+        break;
+
+    case choice 2;
+        // code
+        break;
+}

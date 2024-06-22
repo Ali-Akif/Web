@@ -5,8 +5,27 @@
   <title>Page Title</title>
 </head>
 <body>
+  <img src="../HTML_CSS/3_blog/img/landscape.jpg" alt="">
   <script>
-    console.log(23 + 97);
+    let userName = prompt("Who's there? ");
+
+    if (userName === 'Admin') {
+
+      let pass = prompt('Password? ');
+
+      if (pass === 'TheMaster') {
+        alert('Welcome!');
+      } else if (pass === '' || pass === null) {
+        alert ( 'Canceled' );
+      } else {
+        alert( 'Wrong password');
+      }
+
+    } else if (userName === '' || userName === null) {
+      alert ( 'Canceled' );
+    } else {
+      alert("I don't know you");
+    }
   </script>
 </body>
 </html>
