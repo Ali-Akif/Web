@@ -168,3 +168,6 @@ switch (a) {
 }
 
 +prompt()    prompt() // with the + the value will convert the string to number
+
+
+
