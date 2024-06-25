@@ -235,3 +235,56 @@ if (age >= 18) {
   }
 }
 // #endregion
+
+// #region JavaScript Functions Overview
+// CHAPTER 9: JavaScript Functions Overview
+
+// Basic function
+function favoriteAnimal(animal) {
+  return animal + " is my favorite animal";
+}
+console.log(favoriteAnimal("Goat")); // "Goat is my favorite animal"
+
+// Basic function
+function logKey(event) {
+  console.log(`You pressed "${event.key}".`);
+}
+textBox.addEventListener("keydown", logKey);
+
+// Anonymous function
+textBox.addEventListener("keydown", function (event) {
+  console.log(`You pressed "${event.key}".`);
+});
+
+// Arrow function
+textBox.addEventListener("keydown", event => {
+  console.log(`You pressed "${event.key}".`);
+});
+
+const originals = [1, 2, 3];
+const doubled = originals.map(item => item * 2);
+console.log(doubled); // [2, 4, 6]
+
+// Default parameters
+function showMessage(from, text = "no text given") {
+  console.log(`${from}: ${text}`);
+}
+showMessage("Ann"); // "Ann: no text given"
+
+// Return without value exits the function immediately
+function checkAge(age) {
+  if (age > 18) {
+    return true;
+  }
+  return confirm('Did parents allow you?');
+}
+
+// Condensed versions
+function checkAge(age) {
+  return (age > 18) ? true : confirm('Did parents allow you?');
+}
+function checkAge(age) {
+  return (age > 18) || confirm('Did parents allow you?');
+}
+
+// #endregion
