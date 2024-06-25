@@ -1,39 +1,37 @@
 // #region Problem Solving and Planning
 // CHAPTER 0: Problem Solving and Planning
 
-Understanding_the_problem
-// Write a program that takes a user's input and prints numbers from 1 to the entered number.
-// For multiples of 3 print "Fizz", for multiples of 5 print "Buzz", and for multiples of both print "FizzBuzz".
+/*
+1. Understand
+   - If you can’t explain something in simple terms, you don’t understand it.
 
-Planning
-// User inputs a number via prompt.
-// Loop from 1 to the entered number.
-// Print "Fizz" for multiples of 3, "Buzz" for multiples of 5, "FizzBuzz" for multiples of both, else print the number.
+2. Plan
+   - Given input X, what are the steps necessary to return output Y?
 
-Pseudocode
-// When a user inputs a number
-// Loop from 1 to the entered number
-// If divisible by 3 and 5, print "FizzBuzz"
-// If divisible by 3, print "Fizz"
-// If divisible by 5, print "Buzz"
-// Else print the number
+3. Divide
+   - Reduce the problem to the point where you know how to solve it and write the solution.
+   - Then expand the problem slightly and rewrite the solution to match.
+   - Keep going until you are back where you started.
 
-Implementation
-let answer = parseInt(prompt("Enter the number to FizzBuzz up to: "));
+4. Stuck?
+   - Debug: Go step by step through your solution trying to find where you went wrong. 
+     - The art of debugging is figuring out what you really told your program to do rather than what you thought you told it to do.
+   - Reassess: Take a step back. Look at the problem from another perspective. 
+     - Is there anything that can be abstracted to a more general approach? 
+     - Sometimes we get so lost in the details of a problem that we overlook general principles that would solve the problem at a more general level.
+     - Another way of reassessing is starting anew. Delete everything and begin again with fresh eyes. You’ll be dumbfounded at how effective this is.
+   - Research: Good ol’ Google. Don’t look for a solution to the big problem. Only look for solutions to sub-problems.
+     - Unless you struggle (even a little bit), you won’t learn anything. If you don’t learn anything, you wasted your time.
 
-for (let i = 1; i <= answer; i++) {
-  if (i % 3 === 0 && i % 5 === 0) {
-    console.log("FizzBuzz");
-  } else if (i % 3 === 0) {
-    console.log("Fizz");
-  } else if (i % 5 === 0) {
-    console.log("Buzz");
-  } else {
-    console.log(i);
-  }
-}
+5. Practice
+   - Practice. Practice. Practice.
+   - It’ll only be a matter of time before you recognize that “this problem could easily be solved with <insert concept here>.”
+   - How to practice? There are options out the wazoo! Chess puzzles, math problems, Sudoku, Go, Monopoly, video-games, cryptokitties, etc.
+   - A common pattern amongst successful people is their habit of practicing “micro problem-solving.”
+*/
 
 // #endregion
+
 
 // #region Data Types in JavaScript
 // CHAPTER 1: Data Types in JavaScript
