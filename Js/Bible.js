@@ -1,3 +1,40 @@
+// #region Problem Solving and Planning
+// CHAPTER 0: Problem Solving and Planning
+
+Understanding_the_problem
+// Write a program that takes a user's input and prints numbers from 1 to the entered number.
+// For multiples of 3 print "Fizz", for multiples of 5 print "Buzz", and for multiples of both print "FizzBuzz".
+
+Planning
+// User inputs a number via prompt.
+// Loop from 1 to the entered number.
+// Print "Fizz" for multiples of 3, "Buzz" for multiples of 5, "FizzBuzz" for multiples of both, else print the number.
+
+Pseudocode
+// When a user inputs a number
+// Loop from 1 to the entered number
+// If divisible by 3 and 5, print "FizzBuzz"
+// If divisible by 3, print "Fizz"
+// If divisible by 5, print "Buzz"
+// Else print the number
+
+Implementation
+let answer = parseInt(prompt("Enter the number to FizzBuzz up to: "));
+
+for (let i = 1; i <= answer; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (i % 3 === 0) {
+    console.log("Fizz");
+  } else if (i % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(i);
+  }
+}
+
+// #endregion
+
 // #region Data Types in JavaScript
 // CHAPTER 1: Data Types in JavaScript
 // JavaScript supports different types of data including numbers, strings, booleans, objects, etc.
