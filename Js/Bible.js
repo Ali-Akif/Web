@@ -32,6 +32,12 @@
 
 // #endregion
 
+// #region PseudoCode
+
+// refer to https://builtin.com/data-science/pseudocode
+
+// #endregion
+
 // #region Data Types in JavaScript
 // CHAPTER 1: Data Types in JavaScript
 // JavaScript supports different types of data including numbers, strings, booleans, objects, etc.
