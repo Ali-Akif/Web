@@ -38,6 +38,33 @@
 
 // #endregion
 
+// #region Error Handling and Understanding JavaScript Errors
+// CHAPTER 0.2: Error Handling and Understanding JavaScript Errors
+
+/*
+1. Try Block Execution
+   - The code inside the try block is executed.
+
+2. Error Occurrence
+   - If an error occurs, execution stops, and the error is passed to the catch block.
+
+3. Catch Block Execution
+   - The catch block handles the error using the error object.
+
+4. Continuation
+   - After handling the error, the program continues with the next statement after the try...catch block.
+
+The ReferenceError object represents an error when a variable that doesn't exist (or hasn't yet been initialized) in the current scope is referenced.
+
+The SyntaxError object represents an error when trying to interpret syntactically invalid code. It is thrown when the JavaScript engine encounters tokens or token order that does not conform to the syntax of the language when parsing code.
+
+A TypeError may be thrown when:
+- an operand or argument passed to a function is incompatible with the type expected by that operator or function; or
+- when attempting to modify a value that cannot be changed; or
+- when attempting to use a value in an inappropriate way.
+*/
+
+// #endregion
 // #region Data Types in JavaScript
 // CHAPTER 1: Data Types in JavaScript
 // JavaScript supports different types of data including numbers, strings, booleans, objects, etc.
