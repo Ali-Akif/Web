@@ -1,58 +1,64 @@
-// Functions
-function getRandomInt() {
+// Rock Paper Scissors Game
 
-    let int = Math.floor(Math.random() * 3);
-    return int
-  }
-  
- function NumberToChoice(number) {
-    let choice;
-    switch (number) {
-        case 0:
-            choice = "Rock";
-            break;
-        case 1:
-            choice = "Paper";
-            break;
-        case 2:
-            choice = "Scissors";
-            break;
-        default:
-            choice = "invalid choice";
-            break;
-    }
-    return choice;
- } 
- 
+/* 
+    1: getComputerChoice()
+    2: getHumanChoice()
+    3: humanScore, computerScore
+    4: playRound(humanChoice, computerChoice)
+    5: playGame() 
+*/
+
+// Functions
+
 function getComputerChoice() {
-    let number = getRandomInt();
-    let computerChoice = NumberToChoice(number);
-    return computerChoice;
+    const number = getRandomInt();
+    return numberToChoice(number);
 }
 
 function getUserChoice() {
-    let userInput = prompt(`0 for Rock 
+    const userInput = prompt(`Enter your choice:
+0 for Rock 
 1 for Paper 
 2 for Scissors`);
 
     if (userInput === null) {
-        return "Give me something to choose man"
+        return "Give me something to choose man";
     }
 
-    let userChoice = NumberToChoice(Number(userInput));
+    const userChoice = numberToChoice(Number(userInput));
     return userChoice;
 }
 
 function playRound(humanChoice, computerChoice) {
-    let roundWinner = findWinner(humanChoice, computerChoice);
-    if (roundWinner === 1) {
-        humanScore +=1
-        return "You won!"
+    if (humanChoice === computerChoice) {
+        return "It's a tie!";
+    }
+
+    const roundWinner = findWinner(humanChoice, computerChoice);
+    if (roundWinner) {
+        humanScore += 1;
+        return "You won!";
     } else {
         computerScore += 1;
-        return "You lost!"
-    };
+        return "You lost!";
+    }
+}
 
+function playGame() {
+    while (humanScore < 5 && computerScore < 5) {
+        const winner = playRound(getUserChoice(), getComputerChoice());
+        console.log(winner);
+        console.log(`Your score is: ${humanScore}\nComputer score is: ${computerScore}`);
+    }
+}
+
+function getRandomInt() {
+    return Math.floor(Math.random() * 3);
+}
+
+function numberToChoice(number) {
+    const choices = ["Rock", "Paper", "Scissors"];
+    return choices[number] || "Invalid choice";
 }
 
 function findWinner(choice1, choice2) {
@@ -62,26 +68,11 @@ function findWinner(choice1, choice2) {
         Scissors: 'Paper'
     };
 
-    let winner = undefined;
-
-    if (choice1 === choice2) {
-        return "It's a tie!";
-    }
-
-    if (winningCombinations[choice1] === choice2) {
-        winner = 1
-    } else {
-        winner = 0
-    }
-    return winner
-}
-
-
-function playGame() {
+    return winningCombinations[choice1] === choice2;
 }
 
 // Code
-let humanScore = 0
-let computerScore = 0
+let humanScore = 0;
+let computerScore = 0;
 
-console.log(playRound(getUserChoice(), getComputerChoice()))
+playGame();
