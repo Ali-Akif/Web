@@ -107,3 +107,32 @@ an operand or argument passed to a function is incompatible with the type expect
 when attempting to modify a value that cannot be changed; or
 when attempting to use a value in an inappropriate way.
 */
+
+ // Good
+ function getPlayerScore();
+ function getPlayerName();
+ function getPlayerTag();
+ 
+ // Bad
+ function getUserScore();
+ function fetchPlayerName();
+ function retrievePlayer1Tag();
+ 
+ // Good
+const numberOfThings = 10;
+const myName = "Thor";
+const selected = true;
+
+// Bad (these start with verbs, could be confused for functions)
+const getCount = 10;
+const isSelected = true;
+
+// Good
+function getCount() {
+  return numberOfThings;
+}
+
+// Bad (it's a noun)
+function myName() {
+  return "Thor";
+}
