@@ -1,6 +1,4 @@
 // JS BIBLE 
-// This is the guide I'll come to when needed
-
 
 // #region Problem Solving and Planning
 // CHAPTER 0: Problem Solving and Planning
