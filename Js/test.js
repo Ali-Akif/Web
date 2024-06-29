@@ -136,3 +136,29 @@ function getCount() {
 function myName() {
   return "Thor";
 }
+
+
+const cars = [
+  "Saab",
+  "Volvo", 
+  "BMW"
+];
+
+const cars2 = new Array("Saab", "Volvo", "BMW");
+
+cars.toString(); // Saab,Volvo,BMW
+const person = {firstName:"John", lastName:"Doe", age:46};
+
+myArray[0] = Date.now;
+myArray[1] = myFunction;
+myArray[2] = myCars;
+
+cars.length   // Returns the number of elements
+cars.sort()   // Sorts the array
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fruit = fruits[fruits.length - 1]; // last element
+
+
+fruits.push("Lemon");  // Adds a new element (Lemon) to fruits
+fruits.forEach(myFunction);
