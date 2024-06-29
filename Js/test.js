@@ -162,3 +162,23 @@ let fruit = fruits[fruits.length - 1]; // last element
 
 fruits.push("Lemon");  // Adds a new element (Lemon) to fruits
 fruits.forEach(myFunction);
+
+const person = [];
+person["firstName"] = "John";
+person["lastName"] = "Doe";
+person["age"] = 46;
+person.length;     // Will return 0
+person[0];         // Will return undefined
+
+Array.isArray(fruits);
+="Array: " + (fruits instanceof Array);
+
+const myObj = {
+  name: "John",
+  age: 30,
+  cars: [
+    {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+    {name:"BMW", models:["320", "X3", "X5"]},
+    {name:"Fiat", models:["500", "Panda"]}
+  ]
+}
