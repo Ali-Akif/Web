@@ -357,3 +357,79 @@ function checkAge(age) {
 }
 
 // #endregion
+
+// #region JavaScript Loops Overview
+// CHAPTER 10: JavaScript Loops Overview
+
+// While Loop
+// Basic while loop
+let counter = 0;
+while (counter < 5) {
+  console.log(`Counter is at: ${counter}`);
+  counter++;
+}
+
+// Using while loop to iterate over an array
+const fruits = ["apple", "banana", "cherry"];
+let index = 0;
+while (index < fruits.length) {
+  console.log(`Fruit: ${fruits[index]}`);
+  index++;
+}
+
+// For Loop
+// Basic for loop
+for (let i = 0; i < 5; i++) {
+  console.log(`Index is: ${i}`);
+}
+
+// Using for loop to iterate over an array
+const vegetables = ["carrot", "potato", "cucumber"];
+for (let i = 0; i < vegetables.length; i++) {
+  console.log(`Vegetable: ${vegetables[i]}`);
+}
+
+// Using for...of loop to iterate over an array
+for (const fruit of fruits) {
+  console.log(`Fruit: ${fruit}`);
+}
+
+// Using for...in loop to iterate over object properties
+const person = { name: "John", age: 30, city: "New York" };
+for (const key in person) {
+  console.log(`${key}: ${person[key]}`);
+}
+
+// #endregion
+
+// #region JavaScript Arrays Overview
+// CHAPTER 11: JavaScript Arrays Overview
+
+// Creating arrays
+const numbers = [1, 2, 3, 4, 5];
+const mixedArray = [1, "two", { three: 3 }, [4]];
+
+// Accessing array elements
+console.log(numbers[0]); // 1
+console.log(mixedArray[2].three); // 3
+console.log(mixedArray[3][0]); // 4
+
+// Adding and removing elements
+numbers.push(6); // Adds 6 to the end
+numbers.unshift(0); // Adds 0 to the beginning
+numbers.pop(); // Removes the last element
+numbers.shift(); // Removes the first element
+
+// Iterating over arrays
+numbers.forEach(num => console.log(num));
+
+// Array methods
+const doubled = numbers.map(num => num * 2);
+const filtered = numbers.filter(num => num % 2 === 0);
+const sum = numbers.reduce((total, num) => total + num, 0);
+
+console.log(doubled); // Array with elements doubled
+console.log(filtered); // Array with even numbers
+console.log(sum); // Sum of all numbers in the array
+
+// #endregion
