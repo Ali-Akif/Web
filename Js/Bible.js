@@ -432,4 +432,6 @@ console.log(doubled); // Array with elements doubled
 console.log(filtered); // Array with even numbers
 console.log(sum); // Sum of all numbers in the array
 
+// https://www.w3schools.com/js/js_array_methods.asp
+
 // #endregion
