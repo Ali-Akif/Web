@@ -197,3 +197,49 @@ const a = ["A","B"];
 a.push("C")
 a[2] = [ 1, 2, 3 ]
 console.log(a)
+
+for (let i = 0; i < 10; i++) {
+  console.log(a)
+}
+
+let n = 0;
+
+for (const array of a) {
+  console.log(`Number ${n}: ${array}`);
+  n += 1;
+}
+
+function toUpper(string) {
+  return string.toUpperCase();
+}
+
+const cats = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
+
+const upperCats = cats.map(toUpper);
+
+console.log(upperCats);
+// [ "LEOPARD", "SERVAL", "JAGUAR", "TIGER", "CARACAL", "LION" ]
+
+function lCat(cat) {
+  return cat.startsWith("L");
+}
+
+const cats = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
+
+const filtered = cats.filter(lCat);
+
+console.log(filtered);
+// [ "Leopard", "Lion" ]
+
+for (initializer; condition; final-expression) {
+  // code to run
+}
+
+initializer
+do {
+  // code to run
+
+  final-expression
+} while (condition)
+
+// The main difference between a do...while loop and a while loop is that the code inside a do...while loop is always executed at least once. That's because the condition comes after the code inside the loop. So we always run that code, then check to see if we need to run it again. In while and for loops, the check comes first, so the code might never be executed
