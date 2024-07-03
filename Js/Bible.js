@@ -314,12 +314,6 @@ function favoriteAnimal(animal) {
 }
 console.log(favoriteAnimal("Goat")); // "Goat is my favorite animal"
 
-// Basic function
-function logKey(event) {
-  console.log(`You pressed "${event.key}".`);
-}
-textBox.addEventListener("keydown", logKey);
-
 // Anonymous function
 textBox.addEventListener("keydown", function (event) {
   console.log(`You pressed "${event.key}".`);
