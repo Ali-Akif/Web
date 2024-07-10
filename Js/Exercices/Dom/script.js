@@ -1,5 +1,6 @@
 // your JavaScript file
 
+
 const container = document.querySelector("#container");
 
 const redParagraph = document.createElement("p");
