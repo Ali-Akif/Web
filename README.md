@@ -13,3 +13,4 @@ In this repository, I'll be storing everything related to my exploration of web 
 **Purpose**
 
 The main purpose of this repository is to track my progress and share my learning journey with others. By documenting my experiences, I hope to not only solidify my own understanding but also provide valuable insights and resources for fellow learners.
+
