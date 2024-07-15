@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#main-container {
+    display: flex;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+#controls button,
+#controls label,
+#controls input[type="range"] {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#container {
+    display: grid;
+    width: 80vw; /* Adjust the width to be a bit smaller than the window */
+    height: 80vw; /* Adjust the height to be proportional */
+    max-width: 800px; /* Ensure the grid is not too large on very large screens */
+    max-height: 800px;
+    border: 1px solid black;
+    grid-template-rows: repeat(auto-fill, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(0, 1fr));
+}
+
+.grid-item {
+    box-sizing: border-box;
+    /* Removed border to eliminate grey lines */
+    width: 100%;
+    height: 100%;
+}

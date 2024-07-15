@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etch-a-Sketch</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-
+    <div id="main-container">
+        <div id="controls">
+            <button id="pen">Pen</button>
+            <button id="rainbow">Rainbow mode</button>
+            <button id="eraser">Eraser</button>
+            <label for="size-range">Grid Size: <span id="size-value">16</span>x<span id="size-value">16</span></label>
+            <input type="range" id="size-range" min="1" max="100" value="16">
+            <button id="apply-size">Apply Size</button>
+        </div>
+        <div id="container"></div>
     </div>
     <script src="script.js"></script>
 </body>
