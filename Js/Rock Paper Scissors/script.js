@@ -2,10 +2,8 @@
 
 /* 
     1: getComputerChoice()
-    2: getHumanChoice()
-    3: humanScore, computerScore
-    4: playRound(humanChoice, computerChoice)
-    5: playGame() 
+    2: playRound(humanChoice, computerChoice)
+    3: playGame() 
 */
 
 // Functions
@@ -15,41 +13,37 @@ function getComputerChoice() {
     return numberToChoice(number);
 }
 
-function getUserChoice() {
-    const userInput = prompt(`Enter your choice:
-0 for Rock 
-1 for Paper 
-2 for Scissors`);
-
-    if (userInput === null) {
-        return "Give me something to choose man";
-    }
-
-    const userChoice = numberToChoice(Number(userInput));
-    return userChoice;
-}
-
 function playRound(humanChoice, computerChoice) {
+    const resultDiv = document.getElementById('result');
+    const scoreDiv = document.getElementById('score');
+
     if (humanChoice === computerChoice) {
-        return "It's a tie!";
+        resultDiv.textContent = "It's a tie!";
+    } else {
+        const roundWinner = findWinner(humanChoice, computerChoice);
+        if (roundWinner) {
+            humanScore += 1;
+            resultDiv.textContent = "You won!";
+        } else {
+            computerScore += 1;
+            resultDiv.textContent = "You lost!";
+        }
     }
 
-    const roundWinner = findWinner(humanChoice, computerChoice);
-    if (roundWinner) {
-        humanScore += 1;
-        return "You won!";
-    } else {
-        computerScore += 1;
-        return "You lost!";
+    scoreDiv.textContent = `Your score is: ${humanScore} | Computer score is: ${computerScore}`;
+
+    if (humanScore === 5) {
+        resultDiv.textContent = "Congratulations! You won the game!";
+        resetGame();
+    } else if (computerScore === 5) {
+        resultDiv.textContent = "Sorry, you lost the game!";
+        resetGame();
     }
 }
 
-function playGame() {
-    while (humanScore < 5 && computerScore < 5) {
-        const winner = playRound(getUserChoice(), getComputerChoice());
-        console.log(winner);
-        console.log(`Your score is: ${humanScore}\nComputer score is: ${computerScore}`);
-    }
+function resetGame() {
+    humanScore = 0;
+    computerScore = 0;
 }
 
 function getRandomInt() {
@@ -75,4 +69,6 @@ function findWinner(choice1, choice2) {
 let humanScore = 0;
 let computerScore = 0;
 
-playGame();
+document.getElementById('rock').addEventListener('click', () => playRound('Rock', getComputerChoice()));
+document.getElementById('paper').addEventListener('click', () => playRound('Paper', getComputerChoice()));
+document.getElementById('scissors').addEventListener('click', () => playRound('Scissors', getComputerChoice()));
