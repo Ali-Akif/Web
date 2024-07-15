@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const eraserButton = document.getElementById('eraser');
     const sizeRange = document.getElementById('size-range');
     const sizeValue = document.getElementById('size-value');
+    const sizeValue2 = document.getElementById('size-value2');
     const applySizeButton = document.getElementById('apply-size');
     let currentMode = 'pen'; // Default mode
     let drawing = false;
@@ -72,6 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     sizeRange.addEventListener('input', () => {
         sizeValue.textContent = sizeRange.value;
+        sizeValue2.textContent = sizeRange.value;
     });
 
     applySizeButton.addEventListener('click', () => {
