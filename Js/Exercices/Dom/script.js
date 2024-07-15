@@ -25,3 +25,22 @@ pInDiv.textContent = "Me too !";
 div.appendChild(pInDiv);
 
 container.appendChild(div);
+
+const btn = document.querySelector("#btn");
+//btn.onclick = x => alert("Hello World!");
+
+// btn.addEventListener("click", () => {
+//     alert("Hello World");
+// });
+
+function alertFunction() {
+    alert("Yay you dit it!");
+}
+
+
+btn.addEventListener("click", alertFunction);
+
+btn.addEventListener("click", function (e) {
+    console.log(e.target);
+  });
+  
