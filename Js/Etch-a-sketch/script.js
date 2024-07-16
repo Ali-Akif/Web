@@ -83,3 +83,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     createGrid(16); // Create a default 16x16 grid
 });
+
+// This is not the Odin version
