@@ -40,8 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 
-        
-
         container.addEventListener('mouseup', () => {
             drawing = false;
         });
