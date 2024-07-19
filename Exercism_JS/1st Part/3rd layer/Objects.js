@@ -56,6 +56,8 @@ const obj5 = {
   };
 delete obj5.key1;
 delete obj5['key2'];
+obj['address']['city'];
+// => 'Batticaloa'
 
 
 const obj6 = { greeting: 'hello world' };
