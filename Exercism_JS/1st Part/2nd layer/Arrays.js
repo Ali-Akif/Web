@@ -1,4 +1,6 @@
 // Array
+// [], .length,  list[index], .push(), .pop(), .shift(), .unshift(), .splice()
+
 
 const numbers = [1, 'two', 3, 'four'];
 
