@@ -1,4 +1,5 @@
-// Conditionnal
+// Conditionnal and Comparision
+// if else if > < etc
 
 if (condition1) {
     // code that is executed if "condition1" is true
