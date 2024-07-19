@@ -10,4 +10,4 @@ if (condition1) {
     // code that is executed otherwise
   }
 
-  // a > b ; a >= b ; a < b ; a <= b ; a === b ; a !=== b
+  // a > b ; a >= b ; a < b ; a <= b ; a === b ; a !== b
