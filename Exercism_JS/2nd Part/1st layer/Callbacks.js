@@ -1,4 +1,6 @@
 // Callback functions
+// A callback is a function passed as an argument to another function
+
 
 const sideLength = 5;
 

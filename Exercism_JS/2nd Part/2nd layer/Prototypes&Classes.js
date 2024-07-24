@@ -1,4 +1,6 @@
 // Prototype syntax
+// this. , .prototype. , class, get, set
+
 
 // Constructor Function
 //the convention is that the function name should start with a capital letter. Instances (objects) are derived from the template using the new keyword when invoking the constructor function.
@@ -30,7 +32,7 @@ Car.prototype.addGas = function (litre) {
 // ...
 };
 
-const myCar = new Car();
+const myCar3 = new Car();
 myCar.startEngine();
 myCar.engineRunning;
 // => true
@@ -53,7 +55,7 @@ addGas(litre) {
 }
 }
 
-const myCar = new Car();
+const myCar4 = new Car();
 myCar.startEngine();
 myCar.engineRunning;
 // => true

@@ -1,4 +1,6 @@
 // Errors
+// new Error(), throw, try{}catch{}, isPrototypeOf(), hasOwnProperty(),
+
 
 const error = new Error('Oops, something went wrong');  
 console.log(error.message);
@@ -25,6 +27,7 @@ class Pet {
       console.log(`This is my pet, ${this.name}.`);
     }
   }
+
 class Dog extends Pet {}
 const dog = new Dog('Otis');
 dog.introduce(); // => This is my pet, Otis.

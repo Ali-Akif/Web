@@ -1,4 +1,5 @@
 // Array transformation
+// .map(), .filter(), .reduce(), .reverse(),.slice(), .splice(), .sort()
 
 // Some methods are pure, meaning that they do not modify the original array. They return a new one instead. Other methods however manipulate the array they are called on and do not return the modified array.
 

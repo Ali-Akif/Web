@@ -1,4 +1,6 @@
 // Regex
+// g, i, m, /.../, new RegExp(), .test(), .match(), .replace(), .split()
+
 
 let regex = /[a-z]/;
 regex = new RegExp('[a-z]');

@@ -1,3 +1,7 @@
+// Closures
+// Scope and all that shit
+
+
 // Top-level declarations are global-scope
 const dozen = 12;
 

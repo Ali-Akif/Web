@@ -1,6 +1,6 @@
 // Type Conversion
 
-// Boolean(), Number(), String()
+// .join(), .split(), String(), Boolean(), Number()
 
 /*
 Type Coercion

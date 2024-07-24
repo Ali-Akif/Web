@@ -1,4 +1,6 @@
 // Rest and spread & Array destructuring
+// [..,..,..] = arr,  Rest (a, b, ..c = []), Spread(a, b, c = [...a, b, c])
+
 
 const numberOfMoons = [0, 2, 14];
 const [venus, mars, neptune] = numberOfMoons;

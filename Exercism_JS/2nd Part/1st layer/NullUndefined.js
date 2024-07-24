@@ -1,4 +1,6 @@
 // Null
+// null, undefined, ??
+
 
 let name = null; // Empty value
 // Undefined represent the total absence of a value

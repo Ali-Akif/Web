@@ -1,4 +1,7 @@
 // Arrow Function & Array analysis
+// ()=>{}, .indexOf(), .includes(), .every(), .some(), .find(), .findIndex()
+
+
 function addUpTwoNumbers(num1, num2) {
     return num1 + num2;
   }

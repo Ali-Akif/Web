@@ -1,4 +1,6 @@
 // Functions
+// function ...(), defaultValue, const F = F(..){..}, const obj = { functionName : function(param() {}} 
+
 
 function someName(param1, param2, param3) {
     // ...
