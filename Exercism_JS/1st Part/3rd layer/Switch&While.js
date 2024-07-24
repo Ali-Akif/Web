@@ -1,4 +1,6 @@
 // Switch Statement & While loops
+// while(){} do{}, switch(){case:break, default:}
+
 
 while (condition) {
 // code that is executed repeatedly as long as the condition is true

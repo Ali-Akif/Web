@@ -1,4 +1,5 @@
 // String
+// str[], .length, ''+''
 
 
 'cat'[1]; // => 'a'

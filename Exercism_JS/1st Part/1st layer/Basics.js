@@ -1,10 +1,9 @@
 // Variables
 // const let var, function, import export
 
+
 //Variables are written in camelCase
-//Constant are written in SCREAMING_SNAKE_CASe
-
-
+//Constant are written in SCREAMING_SNAKE_CASE
 let myFirstVariable = 1;
 myFirstVariable = 'Some string';
 const MY_FIRST_CONSTANT = 10;
@@ -14,7 +13,6 @@ function add(num1, num2) {
     return num1 + num2;
   }
 add(1, 3); // => 4
-
 
 // file.js
 export const MY_VALUE = 10;

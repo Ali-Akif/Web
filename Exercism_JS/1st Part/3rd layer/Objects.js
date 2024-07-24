@@ -1,7 +1,8 @@
 // Object
+// {}, obj.item, obj[item], delte, obj[][], for (let k in obj)
+
 
 // key-value
-
 // Key must be a string, Value can be anything else
 
 const emptyObject = {};
@@ -30,17 +31,6 @@ const obj2= {
   };
 
 // can do += and all on value 
-const obj3 = { greeting: 'hello world' };
-obj3.greeting;
-// => hello world
-obj3['greeting'];
-// => hello world
-// Bracket notation also works with variables.
-const key = 'greeting';
-obj3[key];
-// => hello world
-
-
 const obj4 = { greeting: 'hello world' };
 obj4.greeting = 'Hi there!';
 obj4['greeting'] = 'Welcome.';
@@ -48,7 +38,6 @@ obj4.newKey1 = 'new value 1';
 obj4['new key 2'] = 'new value 2';
 const key2 = 'new key 3'; // Dot notation is when you know the name
 obj4[key2] = 'new value 3'; // Bracket notation is for a variable
-
 
 const obj5 = {
     key1: 'value1',
