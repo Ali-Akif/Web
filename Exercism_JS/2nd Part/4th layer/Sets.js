@@ -1,5 +1,7 @@
 // Sets
 
+// new Set(), set.add(), set.has(), set.delete(), set.size, [...set]
+
 const set = new Set();
 const object = { color: 'lime green' };
 const functionallyIdenticalObject = { color: 'lime green' };

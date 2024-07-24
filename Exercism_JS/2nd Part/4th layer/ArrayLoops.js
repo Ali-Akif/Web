@@ -1,4 +1,6 @@
-    // Array Loop
+// Array Loop
+// for (.. of ..), .forEach((number, index) => {})
+
 
 // for... of when you don't need the index
 

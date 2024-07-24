@@ -1,4 +1,5 @@
 // Promises
+// new Promise (function (resolve, reject) {...}), .then, .catch, .finally
 
 const myPromise = new Promise(function (resolve, reject) {
     let sampleData = [2, 4, 6, 8];
