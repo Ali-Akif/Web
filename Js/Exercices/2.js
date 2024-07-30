@@ -9,3 +9,4 @@ function repeatString(string, number) {
 
 string = repeatString("Hello", 3);
 console.log(string)
+

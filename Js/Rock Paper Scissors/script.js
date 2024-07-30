@@ -6,6 +6,7 @@
     3: playGame() 
 */
 
+
 // Functions
 
 function getComputerChoice() {
