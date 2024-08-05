@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>hello</p>
+    <span class="purple"></span> <!-- span.purple -->
+    <div class="purple"></div>
+    <span id="purple"></span> <!-- span#purple -->
+    <div class="1 2" id="3"></div> <!-- div.1.2#3 -->
+    <div class="thisisafunckingdiv" id="withnodiv"></div> <!-- .this#shit-->
+    
+    <header>
+        <nav>
+            <ul></ul> <!-- header>nav>ul*2 -->
+            <ul></ul>
+        </nav>
+    </header>
+
+    <header>
+        <nav>
+            <ul>text</ul>
+            <ul>text</ul> <!-- header>nav>ul*3{text} -->
+            <ul>text</ul>
+        </nav>
+    </header>
+
+    <ul class="1">1</ul>
+    <ul class="2">2</ul>
+    <ul class="3">3</ul> <!-- ul*3.${$}  $$ for 01...-->
+
+    <header></header>
+    <main></main> <!-- header+main+footer-->
+    <footer></footer>
+
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <div></div>   <!-- header>nav^main>div^footer or (header>nav)+(main>div)+footer-->
+    </main>
+    <footer></footer>
+
+    <header>
+        <h2>Heading</h2>
+        <nav>
+            <ol>
+                <li><a href="">Link 1</a></li>
+                <li><a href="">Link 2</a></li>
+                <li><a href="">Link 3</a></li>  <!-- (header>h2{Heading}+nav>ol>li*5>a{Link $})+main+footer-->
+                <li><a href="">Link 4</a></li>
+                <li><a href="">Link 5</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+</body>
+</html>
+
+<!--
+shift w for wrapping
+shift x for removing tag
+-->
