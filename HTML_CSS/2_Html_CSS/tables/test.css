@@ -1,0 +1,8 @@
+td, th {
+    border: 1px solid black;
+    padding: 0.5rem;
+    text-align: left;
+}
+table {
+    border-collapse: collapse; /* this is how you remove the spacing beetween the cells */
+}
