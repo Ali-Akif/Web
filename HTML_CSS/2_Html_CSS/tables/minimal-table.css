@@ -7,7 +7,6 @@ html {
     border: 2px solid rgb(200,200,200);
     letter-spacing: 1px;
     font-size: 0.8rem;
-    margin-bottom: 20px;
   }
   
   td, th {
@@ -33,13 +32,4 @@ html {
   
   caption {
     padding: 10px;
-  }
-
-  tbody {
-    font-size: 95%;
-    font-style: italic;
-  }
-
-  tfoot {
-    font-weight: bold;
   }
