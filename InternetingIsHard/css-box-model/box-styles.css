@@ -1,0 +1,59 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing:border-box;
+} /* reset default style */
+
+h1, p {
+   background-color: #DDE0E3;
+}
+
+em, strong {
+   background-color: #B2D6FF;
+   display: inline; /*default*/
+}
+
+/* CSS box model
+Content – The text, image, or other media content in the element.
+Padding – The space between the box’s content and its border.
+Border – The line between the box’s padding and margin.
+Margin – The space between the box and surrounding boxes.
+*/
+
+h1 {
+   padding: 20px 0 20px 10px; /* padding : vertical horizontal, for four value it's clockwise : top right bottom left */
+   border-bottom: 1px solid #5D6063; /* border : size style color */
+}
+
+p {
+   padding: 20px 0 20px 10px;
+   margin-bottom: 50px; /* margin accept the same shortcut as padding */
+   margin-top: 25px; /* added a div with 1px padding so the margin doesn't collapse */
+}
+
+strong {
+   margin:50px;
+   text-align: center;
+}
+
+div {
+   color: #FFF;
+   background-color: #5995DA;
+   font-weight: bold;
+   padding: 20px;
+   text-align: center;
+   border: 2px solid #5D6063;
+   border-radius: 5px;
+
+   width: 200px;
+   white-space: normal;
+   overflow: hidden;
+
+   box-sizing: border-box; /* width and height only define the size of a box's content, its padding and border are both added on top, box-sizing modfy this */
+
+   margin: 20px auto; /* horizontal auto will center the block in its parent element, only work with a defined width */
+}
+
+body {
+   text-align: center;
+}
