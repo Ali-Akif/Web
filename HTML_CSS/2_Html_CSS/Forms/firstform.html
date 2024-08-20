@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <form action="">
+        <fieldset>
+        <legend>Insert a legend</legend>
+
+            <label for="first_name">Enter your first-name : </label>
+            <input type="text" id="first_name" placeholder="bob" name="first-name">
+            <label for="user_email">Email Address : </label>
+            <input type="email" id="user_email" name="email" placeholder="you@email.com">
+            <label for="user_password">Password : </label>
+            <input type="password" id="user_password" name="password">
+            <label for="amount">Amount : </label>
+            <input type="number" id="amount" name="amount">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob">
+        </fieldset>
+
+        <fieldset> <legend>Insert a legend</legend><textarea rows="20" cols="100">Some initial content</textarea></fieldset>
+
+        <fieldset>
+            <legend>Insert a legend</legend>
+            <select name="Car" id="">
+                <option value="mercedes">Mercedes</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="Tesla" selected>Tesla</option>
+            </select>
+            <select name="fashion" id="">
+                <optgroup label="Clothing">
+                    <option value="">T-shirts</option>
+                    <option value="">T-shirts</option>
+                    <option value="">T-shirts</option>
+                    <option value="">T-shirts</option>
+                </optgroup>
+                    <optgroup label="Foot Wear">
+                        <option value="">Sneakers</option>
+                        <option value="">Sneakers</option>
+                        <option value="">Sneakers</option>
+                    </optgroup>
+            </select>
+            <h1>Ticket Type</h1>
+            <div>
+                <input type="radio" id="child" name="ticket_type" value="child" checked>
+                <label for="child">Childs</label>
+            </div>
+            <div>
+                <input type="radio" id="child" name="ticket_type" value="child">
+                <label for="child">Childs</label>
+            </div>
+            <div>
+                <input type="radio" id="child" name="ticket_type" value="child">
+                <label for="child">Childs</label>
+            </div>
+            <div>
+                <input type="radio" id="child" name="ticket_type" value="child">
+                <label for="child">Childs</label>
+            </div>
+            
+            <h1>Pizza toppings</h1>
+            <div>
+                <input type="checkbox" id="sausage" name="topping" value="sausage" checked>
+                <label for="sausage">Sausage</label>
+            </div>
+            <div>
+                <input type="checkbox" id="sausage" name="topping" value="sausage">
+                <label for="sausage">Sausage</label>
+            </div>
+            <button type="button">Click to Toggle</button>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit form</button>
+        </fieldset>
+    </form>
+</body>
+</html>
