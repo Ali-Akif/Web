@@ -1,0 +1,91 @@
+p:first-of-type {
+   color: #7E8184;
+   font-style: italic;
+}
+
+.button:link,
+.button:visited {
+   color: #FFF;
+   background-color: #5995DA;
+   font-weight: bold;
+   padding: 20px;
+   text-align: center;
+   border: 2px solid #5D6063;
+   border-radius: 5px;
+
+   width: 200px;
+   margin: 20px auto;
+}
+
+.button:hover,
+.button:visited:hover {
+   color: #FFF;
+   background-color: #76AEED;
+}
+
+.button:active,
+.button:visited:active {
+   color: #FFF;
+   background-color: #5995DA;;
+}
+
+.page {
+   width: 600px;
+   margin: 0 auto;
+}
+
+.call-to-action {
+   font-style: italic;
+   background-color: #EEB75A;
+}
+
+.call-to-action:link,
+.call-to-action:visited {
+  font-style: italic;
+  background-color: #EEB75A;     /* Yellow */
+}
+
+.call-to-action:hover,
+.call-to-action:visited:hover {
+  background-color: #F5CF8E;     /* Light yellow */
+}
+
+.call-to-action:active,
+.call-to-action:visited:active {
+  background-color: #EEB75A;     /* Yellow */
+}
+.synopsis em {
+   font-style: normal;
+}
+
+/*
+:link – A link the user has never visited.
+:visited – A link the user has visited before.
+:hover – A link with the user’s mouse over it.
+:active – A link that’s being pressed down by a mouse (or finger). 
+*/
+
+a:link {
+   color: blue;
+   text-decoration: none;
+}
+a:visited {
+   color: purple;
+}
+a:hover {
+   color: aqua;
+   text-decoration: underline;
+}
+a:active {
+   color:red;
+}
+a:visited:hover {
+   color: orange;
+}
+a:visited:active {
+   color: red;
+}
+
+p:last-of-type {
+   margin-bottom: 50px; /* add margin on the last p */
+}
