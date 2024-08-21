@@ -1,0 +1,11 @@
+BEM meaning Block Element Modifier
+
+syntax :
+
+.block {} represent the higher level af an abstraction or component
+.block_element {} represents a descendent of .block that helps form .block as a whole 
+.block--modifier epresent a different state or version of .block 
+
+remember that you don’t need to use it for everything
+Just because something happens to live inside a block it doesn’t always mean is is actually a BEM element.
+Did it just happen to live inside a block, or is it styled because it's in this particular block 
