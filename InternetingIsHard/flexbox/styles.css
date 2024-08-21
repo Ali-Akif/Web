@@ -1,0 +1,125 @@
+/*
+Use display: flex; to create a flex container.
+Use justify-content to define the horizontal alignment of items.
+Use align-items to define the vertical alignment of items.
+Use flex-direction if you need columns instead of rows.
+Use the row-reverse or column-reverse values to flip item order.
+Use order to customize the order of individual elements.
+Use align-self to vertically align individual items.
+Use flex to create flexible boxes that can stretch and shrink.
+*/
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.menu-container {
+   color: #fff;
+   background-color: #5995da;
+   padding: 20px 0;
+
+   display: flex; /*turn it into a flex container */
+   justify-content: center;
+   /* Other values for justify-content are:
+   center
+   flex-start
+   flex-end
+   space-around ( margin on extremity )
+   space-between ( only space beetween ) */
+
+}
+.menu {
+   width: 900px;
+
+   display: flex;
+   justify-content: space-between;
+}
+.links {
+   display: flex;
+   justify-content: flex-end;
+}
+.login {
+   margin-left: 20px;
+}
+
+.header-container {
+   color: #5995da;
+   background-color: #D6E9FE;
+   
+   display: flex;
+   justify-content: center;
+}
+.header {
+   width: 900px;
+   height: 300px;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   /* The available options for align-items is similar to justify-content:
+   center
+   flex-start   (top)
+   flex-end      (bottom)
+   stretch
+   baseline */
+}
+
+.photo-grid-container {
+   display: flex;
+   justify-content: center;
+}
+
+.photo-grid {
+   width: 900px;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   flex-direction: row;
+   align-items: center;
+}
+.photo-grid-item {
+   border: 1px solid red;
+   width: 300px;
+   height: 300px;
+}
+.first-item {
+   order: 1;
+}
+.last-item {
+   order:-1;
+}
+
+.social,
+.subscribe {
+   align-self: flex-end;
+   /* Accept the same value as align-items property */
+
+   margin-bottom: 20px;
+}
+
+.footer {
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer-item {
+   border: 1px solid #fff;
+   background-color: #D6E9FE;
+   height: 200px;
+   flex: 1;
+   /* flex 1 tells the items to stretch to match the width of .footer.*//
+}
+
+.footer-one,
+.footer-three {
+   background-color: #5995da;
+   flex:initial;
+   width: 300px;
+}
+
+.signup {
+   margin-left: auto;
+   /* Auto-margins eat up all the extra space in a flex container, so instead of distributing items equally, this moves the .signup and any following items (.login) to the right side of the container */
+}
+
