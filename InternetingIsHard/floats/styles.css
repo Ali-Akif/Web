@@ -74,6 +74,7 @@ p {
 }
 
 .comment {
+   height: 75px;
    margin: 10px;
-   overflow: hidden;
+   overflow: auto;
 }
