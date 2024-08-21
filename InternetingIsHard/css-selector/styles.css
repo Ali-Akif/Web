@@ -1,6 +1,19 @@
+/* ID selector have higher specificity than class selector, from greatest to least : 
+#button2
+.button:link
+a:link and .synopsis em
+.button
+a
+*/
+
 p:first-of-type {
-   color: #7E8184;
+   color: #7E8184;  /* This will select all first p of EVERY container */
    font-style: italic;
+}
+
+.page > p:first-of-type {
+   color:#7E8184;
+   font-style: italic; /*this is better*/
 }
 
 .button:link,
