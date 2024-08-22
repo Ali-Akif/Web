@@ -14,7 +14,6 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   border: 1px solid  black;
 }
 .menu {
    background-color: #5995DA;
@@ -39,7 +38,19 @@
  .feature-3 {
    background-color: #C8C6FA;
 }
-
+.illustration img {
+   width: 100%;
+   display: block;
+}
+.header {
+   height: auto;
+   justify-content: inherit;
+   align-items: inherit;
+}
+.photo img {
+   width: 100%;
+   display: block;
+}
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
    body {
