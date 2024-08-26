@@ -1,0 +1,15 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+header {
+   height: 65px;
+   background-color:#EA002A;
+}
+
+.icons {
+   display: flex;
+   align-items: flex-end;
+}
