@@ -60,8 +60,39 @@ header {
    background-color: white;
 }
 
+.center {
+   display: none;
+}
+
 /* Desktop Style */
 
 @media only screen and (min-width: 1000px) {
-   
+   .burger-menu {
+      display: none;
+   }
+   .center {
+      display: block;
+   }
+   header {
+      padding: 0 10%;
+      height: 90px;
+   }
+   .pringles-logo img {
+      height: 114px;
+      width: auto;
+   }
+   .search,
+   .login,
+   .flag {
+      height: 47px;
+      width: 47px;
+   }
+
+   .right {
+      width: 200px;
+   }
+   .center nav {
+      display: flex;
+      width: 1000px;
+   }
 }
