@@ -64,35 +64,52 @@ header {
    display: none;
 }
 
-/* Desktop Style */
+/* Overlay */
 
-@media only screen and (min-width: 1000px) {
-   .burger-menu {
-      display: none;
-   }
-   .center {
-      display: block;
-   }
-   header {
-      padding: 0 10%;
-      height: 90px;
-   }
-   .pringles-logo img {
-      height: 114px;
-      width: auto;
-   }
-   .search,
-   .login,
-   .flag {
-      height: 47px;
-      width: 47px;
-   }
-
-   .right {
-      width: 200px;
-   }
-   .center nav {
-      display: flex;
-      width: 1000px;
-   }
+.mobile-menu {
+   opacity: 0;
+   background-color: rgba(0, 0 , 0, 0.8);
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   padding: 140px 0;
+   display: flex;
+   flex-direction: column;
 }
+.mobile-menu a {
+   color: white;
+   font-size: 18px;
+   padding: 7px 0;
+   margin-left: 20px;
+   text-decoration: none;
+}
+
+.mobile-menu div {
+   height: 1px;
+   background-color: rgb(164, 164, 164);
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
+.cross {
+   opacity: 0;
+   position: fixed;
+   height: 35px;
+   width: 35px;
+   right: 6px;
+   top: 12px;
+}
+
+#menu-toggle:checked ~ .right .burger-menu {
+   opacity: 0;
+}
+
+#menu-toggle:checked ~ .right .cross {
+   opacity: 1;
+}
+
+#menu-toggle:checked ~ .mobile-menu {
+   opacity: 1;
+}
+
+/* Popmachin */
